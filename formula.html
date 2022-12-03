@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                                                                        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title> 
+</head>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bmi-calculator" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">BMI Calculator</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#compound-int-calc" type="button" role="tab" aria-controls="compound-int-calc" aria-selected="false">Compound Interest Calculator</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" >Disabled</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="bmi-calculator" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <h1>BMI Calculator</h1>
+            <form>
+                <label for="height">Height (m)</label>
+                <input id="height" name="height" type="number">
+                <label for="weight">Weight (kg)</label>
+                <input id="weight" name="weight" type="number">
+                <button type="button" class="btn btn-primary" onclick="onButtonClick()">Calculate</button>
+            </form>
+        
+            <h3 id="result"></h3>
+           
+        </div>
+        <div class="tab-pane fade" id="compound-int-calc" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <h2>COMPOUND INTEREST</h2>
+            <div class="row">
+              <div class="col-12">
+                <form>
+                  <div class="mb-3">
+                    <label for="height" class="form-label">Height(m)</label>
+                    <input type="number" class="form-control" id="height" aria-describedby="height">
+                    <div id="height" class="form-text">Enter your height in meters</div>
+                  </div>
+                </li>
+          
+          
+                  <div class="mb-3">
+                    <label for="weight" class="form-label">Weight (kg)</label>
+                    <input type="number" class="form-control" id="weight">
+                    <div id="weight" class="form-text">Enter your weight in kilograms</div>
+                  </div>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-primary" onclick="onButtonClick()">Calculate</button>
+            </form>
+              </div>
+            </div>
+            
+         <h3 id="result"></h3>
+
+
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <h2>Here is my contact info</h2>
+        </div>
+        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+            This is disabled.
+        </div>
+      </div>
+      <script src="/functionps.js"></script>
+      <script src="/scripts/bmicalculator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
