@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 200px 40px 200px;
+    background-color: #eaf1ff;
+}
+h1{
+    margin:20px;
+    font-size: 30px;
+    color: #21325b;
+}
+.container{
+    background-color:white ;
+}
+h2,h3{
+    color: #21325b;
+}
+#title{
+    text-align: center;
+
+}
+
+.navbar
+{
+    background-color: #21325b;
+}
+.navbar ul li a{
+    color: black;
+    color: white;
+    
+}
+
+.footer{
+    background-color:#21325b;
+    color: white;
+    
+    
+}
+ul li{
+    color: white;
+}
